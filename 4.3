@@ -1,0 +1,17 @@
+OrientationBuilder(
+  builder: (context, orientation) {
+    if (orientation == Orientation.portrait) {
+      return const Column(
+        children: [
+          Text('Portrait'),
+        ],
+      );
+    }
+
+    return const Row(
+      children: [
+        Text('Landscape'),
+      ],
+    );
+  },
+)
