@@ -1,0 +1,27 @@
+// Flutter & Dart Basics
+
+// A class - Dart is object-oriented
+class Student {
+  String name;
+  int age;
+
+  Student(this.name, this.age);
+
+  void displayDetails() {
+    print("Student Name: $name");
+    print("Age: $age");
+  }
+}
+
+// Async function
+Future<String> getMessage() async {
+  await Future.delayed(const Duration(seconds: 1));
+  return "Hello from asynchronous Dart!";
+}
+
+void main() async {
+  // -----------------------------
+  // Strong typing
+  // -----------------------------
+
+  String name = "
