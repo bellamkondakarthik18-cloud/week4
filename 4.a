@@ -1,0 +1,10 @@
+Widget build(BuildContext context) {
+  final size = MediaQuery.sizeOf(context);
+  final orientation = MediaQuery.orientationOf(context);
+
+  return Text(
+    'Width: ${size.width}\n'
+    'Height: ${size.height}\n'
+    'Orientation: $orientation',
+  );
+}
