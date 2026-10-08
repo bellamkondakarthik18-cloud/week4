@@ -1,0 +1,17 @@
+LayoutBuilder(
+  builder: (context, constraints) {
+    if (constraints.maxWidth < 600) {
+      return const Column(
+        children: [
+          Text('Mobile Layout'),
+        ],
+      );
+    }
+
+    return const Row(
+      children: [
+        Text('Tablet/Desktop Layout'),
+      ],
+    );
+  },
+)
